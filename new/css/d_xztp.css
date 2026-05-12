@@ -18,16 +18,16 @@
     height: 100%;
     transform-origin: center;
     transform-style: preserve-3d;
-    transform: translateZ(-30vw) rotateY(0);
-    animation: carousel 9s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    transform: translateZ(-40vw) rotateY(0);
+    animation: carousel 12s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
 }
 
 .item {
     position: absolute;
     width: 70vw;
     height: 50vw;
-    max-width: 400px;
-    max-height: 700px;
+    max-width: 500px;
+    max-height: 900px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     border-radius: 6px;
     background-size: cover;
@@ -35,43 +35,73 @@
 }
 
 .item:nth-child(1) {
-    background-image: url(../box/12.webp);
-    transform: rotateY(0) translateZ(35vw);
+    background-image: url(../box/yy.png);
+    transform: rotateY(0) translateZ(40vw);
 }
 
 .item:nth-child(2) {
-    background-image: url(../box/A_p1.webp);
-    transform: rotateY(120deg) translateZ(35vw);
+    background-image: url(../box/A_p1.png);
+    transform: rotateY(60deg) translateZ(40vw);
 }
 
 .item:nth-child(3) {
-    background-image: url(../box/122711735_p0.webp);
-    transform: rotateY(240deg) translateZ(35vw);
+    background-image: url(../box/seyy.png);
+    transform: rotateY(120deg) translateZ(40vw);
+}
+
+.item:nth-child(4) {
+    background-image: url(../box/ams5.png);
+    transform: rotateY(180deg) translateZ(40vw);
+}
+
+.item:nth-child(5) {
+    background-image: url(../box/cyy2.png);
+    transform: rotateY(240deg) translateZ(40vw);
+}
+
+.item:nth-child(6) {
+    background-image: url(../box/ams2.png);
+    transform: rotateY(300deg) translateZ(40vw);
 }
 
 @keyframes carousel {
-
-    0%,
-    17.5% {
-        transform: translateZ(-35vw) rotateY(0);
-        /* 变换：沿z轴平移-35vw，绕y轴旋转0度 */
+    0% {
+        transform: translateZ(-40vw) rotateY(0);
     }
-
-    27.5%,
-    45% {
-        transform: translateZ(-35vw) rotateY(-120deg);
-        /* 变换：沿z轴平移-35vw，绕y轴旋转-120度 */
+    4.17% {
+        transform: translateZ(-40vw) rotateY(-60deg);
     }
-
-    55%,
-    72.5% {
-        transform: translateZ(-35vw) rotateY(-240deg);
-        /* 变换：沿z轴平移-35vw，绕y轴旋转-240度 */
+    16.67% {
+        transform: translateZ(-40vw) rotateY(-60deg);
     }
-
-    82.5%,
+    20.83% {
+        transform: translateZ(-40vw) rotateY(-120deg);
+    }
+    33.33% {
+        transform: translateZ(-40vw) rotateY(-120deg);
+    }
+    37.5% {
+        transform: translateZ(-40vw) rotateY(-180deg);
+    }
+    50% {
+        transform: translateZ(-40vw) rotateY(-180deg);
+    }
+    54.17% {
+        transform: translateZ(-40vw) rotateY(-240deg);
+    }
+    66.67% {
+        transform: translateZ(-40vw) rotateY(-240deg);
+    }
+    70.83% {
+        transform: translateZ(-40vw) rotateY(-300deg);
+    }
+    83.33% {
+        transform: translateZ(-40vw) rotateY(-300deg);
+    }
+    87.5% {
+        transform: translateZ(-40vw) rotateY(-360deg);
+    }
     100% {
-        transform: translateZ(-35vw) rotateY(-360deg);
-        /* 变换：沿z轴平移-35vw，绕y轴旋转-360度 */
+        transform: translateZ(-40vw) rotateY(-360deg);
     }
 }
